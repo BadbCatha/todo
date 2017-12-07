@@ -14,7 +14,8 @@ class TasksController < ApplicationController
 	end
 
 	def index
-		@tasks=Task.all
+		@tasks=Task.all.order(id: :desc)
+
 	end
 end
 
