@@ -1,0 +1,11 @@
+<h1>New Task "to do"</h1>
+
+<%=form_for:task,url:tasks_path do|f|%>
+
+<p><%= f.label:to_do %>
+<br><%= f.text_field:to_do %></p>
+
+<p><%= f.label:description %><br>
+<%= f.text_area:description %></p>
+
+<p><%= f.submit%></p><%end%>
